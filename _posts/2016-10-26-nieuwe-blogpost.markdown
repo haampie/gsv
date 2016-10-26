@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: standaard
 title: "Nieuwe titel!"
 date: 2016-10-26 21:00:00 +0200
 categories: nieuw

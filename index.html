@@ -2,4 +2,18 @@
 layout: standaard
 ---
 
-Hoi dag! Verandering!
+<ul>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+<ul>
+{% for activiteit in site.activiteiten %}
+  <li>
+    <a href="{{ activiteit.url }}">{{ activiteit.title }}</a>
+  </li>
+{% endfor %}
+</ul>
