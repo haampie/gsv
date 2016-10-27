@@ -11,10 +11,16 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">{{ page.title }}</h1>
+      <h1 class="project-name">{{ page.title | default: GSVnet }}</h1>
     </section>
     <section class="main-content">
       {{ content }}
     </section>
+
+    <footer class="main-content">
+      <small>
+        <a rel="nofollow" href="https://github.com/haampie/gsv/edit/master/{{ page.path }}">Verbeter deze pagina</a>
+      </small>
+    </footer>
   </body>
 </html>
