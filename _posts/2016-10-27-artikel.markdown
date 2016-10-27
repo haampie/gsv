@@ -1,0 +1,22 @@
+---
+layout: standaard
+title: Mijn nieuwste blogpost
+date: 2016-10-27 15:30:00 +0200
+categories: nieuw
+---
+
+# Hallo
+
+Lorem *ipsum* dolor sit **amet**, consectetur adipisicing elit. Aliquid sunt quam, vero ducimus nam beatae fugiat aperiam, quo corporis modi dolor. Eveniet iusto iure veritatis laudantium necessitatibus est, placeat reiciendis voluptatibus enim non fugit voluptas, ipsum voluptates quidem, sit facere minima sunt quam!
+
+Obcaecati similique nihil nobis cumque voluptates odit autem vitae corporis nisi praesentium provident velit et maxime doloribus consequuntur laboriosam dignissimos quo sint, inventore amet alias, recusandae illum. Culpa sit voluptas, voluptatum a suscipit explicabo laboriosam laborum eum, nihil esse, alias.
+
+👍
+
+> quote
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aliquid quidem ipsum deserunt! Est repudiandae, magnam et, doloremque corporis aut.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aliquid quidem ipsum deserunt! Est repudiandae, magnam et, doloremque corporis aut.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aliquid quidem ipsum deserunt! Est repudiandae, magnam et, doloremque corporis aut.
