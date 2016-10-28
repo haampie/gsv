@@ -26,7 +26,7 @@ layout: standaard
 
 <h2>Gekopieerde pagina's</h2>
 <ul>
-{% for pagina in site.paginas %}
+{% for post in site.posts %}
   <li>
     <a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a>
   </li>
