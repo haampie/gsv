@@ -28,7 +28,7 @@ layout: standaard
 <ul>
 {% for pagina in site.paginas %}
   <li>
-    <a href="{{ tekstpagina.url | prepend: site.github.url }}">{{ tekstpagina.title }}</a>
+    <a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a>
   </li>
 {% endfor %}
 </ul>
