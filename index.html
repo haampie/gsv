@@ -23,3 +23,13 @@ layout: standaard
   </li>
 {% endfor %}
 </ul>
+
+<h2>Gekopieerde pagina's</h2>
+<ul>
+{% for pagina in site.paginas %}
+  <li>
+    <a href="{{ tekstpagina.url | prepend: site.github.url }}">{{ tekstpagina.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
