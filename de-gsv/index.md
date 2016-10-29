@@ -1,7 +1,7 @@
 ---
 layout: artikel
 title: Over de GSV
-permalink: /de-gsv/
+gewicht: 10
 ---
 
 <div>

@@ -11,128 +11,13 @@
     <body id="about-page">
         <div class="overal-header">
             <header class="top-header">
-                <nav class="nav-bar">
-                    <div class="nav-bar-extras">
-                        <button id="navbar-toggler" class="nav-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                    </div>
-                    <h1 class="logo">
-                    <a class="logo-link i-gsv-top" href="/">
-                        <span>Gereformeerde Studentenvereniging Groningen</span>
-                    </a>
-                    </h1>
-                    <ul id="main-menu" class="nav-bar-links">
-                        <li class="top-level-menuitem has-sub-menu active-menu">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv">De GSV</a>
-                            <span class="top-caret"><i class="caret"></i></span>
-                            <ul class="sub-level-menu">
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/de-gsv">Over de GSV</a>
-                                </li>
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/de-gsv/geschiedenis">Geschiedenis</a>
-                                </li>
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/de-gsv/pijlers">Pijlers</a>
-                                </li>
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/de-gsv/senaten">Senaten</a>
-                                </li>
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/de-gsv/commissies">Commissies</a>
-                                </li>
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/de-gsv/contact">Contact</a>
-                                </li>
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/de-gsv/oud-leden">Oud-leden</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="top-level-menuitem">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/forum">Forum</a>
-                        </li>
-                        <li class="top-level-menuitem">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/albums">Fotoalbum</a>
-                        </li>
-                        <li class="top-level-menuitem">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/activiteiten">Activiteiten</a>
-                        </li>
-                        <li class="top-level-menuitem has-sub-menu">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/intern/profiel">
-                            <img src="https://avatar.gsvnet.nl/avatar/62288ac65c238d13d7273143d4442fcd?s=24&amp;d=mm" width="24" height="24" class="nav-profile-image">Harmen</a>
-                            <span class="top-caret"><i class="caret"></i></span>
-                            <ul class="sub-level-menu">
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/intern/profiel">Profiel</a>
-                                </li>
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/intern/jaarbundel">Jaarbundel</a>
-                                </li>
-                                <li>
-                                    <a class="sub-level-link" href="https://www.dropbox.com/sh/o06lxxza7u6a5ka/AACsPUF-MisVV3DSvrpb2B32a?dl=0">BK-materiaal</a>
-                                </li>
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/intern/bestanden">GSVdocs</a>
-                                </li>
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/intern/sponsorprogramma">Sponsors</a>
-                                </li>
-                                <li>
-                                    <a class="sub-level-link" href="https://www.gsvnet.nl/uitloggen">Uitloggen</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="extra-submenu-nav">
-                    <ul class="extra-submenu">
-                        <li class="top-level-menuitem active">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv">Over de GSV</a>
-                        </li>
-                        <li class="top-level-menuitem">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/geschiedenis">Geschiedenis</a>
-                        </li>
-                        <li class="top-level-menuitem">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/pijlers">Pijlers</a>
-                        </li>
-                        <li class="top-level-menuitem">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/senaten">Senaten</a>
-                        </li>
-                        <li class="top-level-menuitem">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/commissies">Commissies</a>
-                        </li>
-                        <li class="top-level-menuitem">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/contact">Contact</a>
-                        </li>
-                        <li class="top-level-menuitem">
-                            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/oud-leden">Oud-leden</a>
-                        </li>
-                    </ul>
-                </nav>
+                {% include menu.html nav=site.data.menu %}
             </header>
         </div>
 
         {{ content }}
-        
-        <footer class="site-footer column-holder">
-            <p>Caput sapientiae est reverentia Domini</p>
-            <address class="address-info" itemscope itemtype="http://data-vocabulary.org/Organization">
-                <p>
-                    <span itemprop="name">
-                        <a href="//www.gsvnet.nl/" itemprop="url">Gereformeerde Studenten Vereniging</a>
-                    </span>.
-                    <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-                        <span itemprop="street-address">Hereweg 40</span>,
-                        <span itemprop="locality">Groningen</span>.
-                        <meta itemprop="region" content="Groningen" />
-                        <meta itemprop="country-name" content="Nederland" />
-                    </span>
-                    <a href="/de-gsv/contact" title="Contact">Contactgegevens</a>
-                </p>
-                <meta itemprop="latitude" content="53.2093731" />
-                <meta itemprop="longitude" content="6.5723083" />
-            </address>
-        </footer>
+
+        {% include footer.html %}
 
         <script async src="{{ site.github.url }}/scripts/app.js"></script>
     </body>

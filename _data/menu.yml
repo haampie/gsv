@@ -1,0 +1,19 @@
+# Let op: URLs moeten eindigen met een `/`
+- text: De GSV
+  url: /de-gsv/
+  subitems:
+    - text: Over de GSV
+      url: /de-gsv/
+    - text: Geschiedenis
+      url: /de-gsv/geschiedenis.html
+- text: Word lid
+  url: /word-lid/
+  subitems:
+    - text: Lid worden?
+      url: /word-lid/
+    - text: Studie & vereniging
+      url: /word-lid/studie-en-vereniging.html
+    - text: Veelgestelde vragen
+      url: /word-lid/veelgestelde-vragen.html
+    - text: Inschrijven
+      url: /word-lid/inschrijven.html
