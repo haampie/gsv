@@ -9,6 +9,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
 
 collections:
   activiteiten:
