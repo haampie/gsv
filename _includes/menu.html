@@ -39,28 +39,26 @@
     </ul>
 </nav>
 
-<!-- <nav class="extra-submenu-nav">
+{% assign active_sub_menu =  %}
+{% for item in include.nav %}
+    {% if item.url == navurl %}
+        {% assign active_sub_menu = item.subitems %}
+    {% endif %}
+    {% for sub in item.subitems %}
+        {% if sub.url == navurl %}
+            {% assign active_sub_menu = item.subitems %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+{% if active_sub_menu %}
+<nav class="extra-submenu-nav">
     <ul class="extra-submenu">
-        <li class="top-level-menuitem active">
-            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv">Over de GSV</a>
+        {% for sub in active_sub_menu %}
+        <li class="top-level-menuitem{% if sub.url == navurl %} active{% endif%}">
+            <a class="top-level-link" href="{{ site.github.url }}{{ sub.url }}">{{ sub.text }}</a>
         </li>
-        <li class="top-level-menuitem">
-            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/geschiedenis">Geschiedenis</a>
-        </li>
-        <li class="top-level-menuitem">
-            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/pijlers">Pijlers</a>
-        </li>
-        <li class="top-level-menuitem">
-            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/senaten">Senaten</a>
-        </li>
-        <li class="top-level-menuitem">
-            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/commissies">Commissies</a>
-        </li>
-        <li class="top-level-menuitem">
-            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/contact">Contact</a>
-        </li>
-        <li class="top-level-menuitem">
-            <a class="top-level-link" href="https://www.gsvnet.nl/de-gsv/oud-leden">Oud-leden</a>
-        </li>
+        {% endfor %}
     </ul>
-</nav> -->
+</nav>
+{% endif %}
