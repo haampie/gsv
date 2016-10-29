@@ -1,34 +1,37 @@
 ---
 title: hoi
-layout: twee_kolommen
+layout: homepage
 ---
 
-<h1>Dit is de homepage.</h1>
 
-<h2>Blog posts</h2>
-<ul>
-{% for post in site.posts %}
-  <li>
-    <a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
-</ul>
+<div class="column-holder">
+  <h1>Dit is de homepage.</h1>
+
+  <h2>Blog posts</h2>
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
 
 
-<h2>Binnenkort</h2>
-<ul>
-{% for activiteit in site.activiteiten %}
-  <li>
-    <a href="{{ activiteit.url | prepend: site.github.url }}"><strong>{{ activiteit.title }}</strong> ({{ activiteit.pijler }})</a>
-  </li>
-{% endfor %}
-</ul>
+  <h2>Binnenkort</h2>
+  <ul>
+  {% for activiteit in site.activiteiten %}
+    <li>
+      <a href="{{ activiteit.url | prepend: site.github.url }}"><strong>{{ activiteit.title }}</strong> ({{ activiteit.pijler }})</a>
+    </li>
+  {% endfor %}
+  </ul>
 
-<h2>Gekopieerde pagina's</h2>
-<ul>
-{% for post in site.posts %}
-  <li>
-    <a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
-</ul>
+  <h2>Gekopieerde pagina's</h2>
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
