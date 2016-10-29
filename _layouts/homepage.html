@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700,400italic">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Yantramanav:400,900">
+        <link rel="stylesheet" href="{{ site.github.url }}/stylesheets/gsv.css">
+        <link rel="stylesheet" href="{{ site.github.url }}/stylesheets/homepage.css">
+        <title>{{ page.title | default: GSVnet }}</title>
+        <meta name="theme-color" content="#5b2b92">
+    </head>
+    <body>
+        <div class="splash">
+            <div class="center">
+                <h2 class="splash__header">Gereformeerde Studentenvereniging</h2>
+                <ul class="splash-list splash-list--2col">
+                    <li class="highlight">200 leden</li>
+                    <li>Sinds 1966</li>
+                    <li class="highlight">Groningen</li>
+                    <li>Academisch</li>
+                    <li class="highlight">Christelijk</li>
+                    <li>Studentikoos</li>
+                    <li>Sociaal</li>
+                    <li>Intellectueel</li>
+                </ul>
+                <p>Nog <a href="#" class="call-to-action">vragen</a>? Nu <a href="#" class="call-to-action">lid worden</a>?</p>
+            </div>
+        </div>
+        
+        <div class="overal-header">
+            <header class="top-header">
+                {% include menu.html nav=site.data.menu %}
+            </header>
+        </div>
+
+        {{ content }}
+
+        {% include footer.html %}
+
+        <script async src="{{ site.github.url }}/scripts/app.js"></script>
+    </body>
+</html>
