@@ -3,7 +3,7 @@ layout: artikel
 menu: /de-gsv/
 ---
 
-div>
+<div>
     <h1>Pijlers</h1>
     <p class="lead">De GSV richt haar activiteiten in volgens vier pijlers. Een christelijke, een intellectuele, een sociale en een studentikoze pijler. Hier onder volgt een korte uitleg over wat de pijlers inhouden</p>
 </div>

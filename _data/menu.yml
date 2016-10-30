@@ -8,6 +8,10 @@
       url: /de-gsv/geschiedenis.html
     - text: Pijlers
       url: /de-gsv/pijlers.html
+    - text: Senaten
+      url: /de-gsv/senaten.html
+    - text: Commissies
+      url: /de-gsv/commissies.html
 - text: Word lid
   url: /word-lid/
   subitems:
