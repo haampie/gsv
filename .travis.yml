@@ -10,6 +10,9 @@ before_script:
 # the `install` step will run `bundle install` by default.
 script: ./tests/test.sh
 
+notifications:
+  email: false
+
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
