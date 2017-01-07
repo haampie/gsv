@@ -4,5 +4,5 @@ title: Inschrijven
 ---
 
 # Inschrijven
-<p class="delta">Schrijf je in!</p>
+<p class="delta">Schrijf je nu in!</p>
 
